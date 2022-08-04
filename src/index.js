@@ -39,8 +39,8 @@ function onSearch(e) {
       renderCountries(data);
     })
     .catch(error => {
-      clearCountryInfo();
       clearCountryList();
+      clearCountryInfo();
       Notiflix.Notify.failure('Oops, there is no country with that name');
     });
 }
